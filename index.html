@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>fCC Simon</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div id="container">
+  <div id="three">
+    <div id="two">
+      <div id="one">
+        <div id="buttonContainer">
+          <div id="top">
+            <div class="button green"></div>
+            <audio id="greenSound"
+                   src="http://res.cloudinary.com/percipience/video/upload/v1521588042/green_nhb6fa.ogg">
+            </audio>
+            <div class="button red"></div>
+            <audio id="redSound"
+                   src="http://res.cloudinary.com/percipience/video/upload/v1521588184/red_dcypsi.ogg">
+            </audio>
+          </div>
+          <div id="bottom">
+            <div class="button yellow"></div>
+            <audio id="yellowSound"
+                   src="http://res.cloudinary.com/percipience/video/upload/v1521588362/yellow_wixzzp.ogg">
+            </audio>
+            <div class="button blue"></div>
+            <audio id="blueSound"
+                   src="http://res.cloudinary.com/percipience/video/upload/v1521588426/blue_ditsgx.ogg">
+            </audio>
+          </div>
+          <div id="control">
+            <div id="countContainer">
+              <div id="window"><span></span></div>
+              <div class="label">COUNT</div>
+            </div>
+            <div id="strictStartContainer">
+              <div id="strictContainer">
+                <div class="strict"></div>
+                <div class="label">STRICT</div>
+              </div>
+              <div id="startContainer">
+                <div class="start"></div>
+                <div class="label">START</div>
+              </div>
+            </div>
+            <div id="offOnContainer">
+              <div id="offOn">
+                <label class="toggle">
+                  <input type="checkbox">
+                  <span class="slide"></span>
+                </label>
+              </div>
+              <div id="offOnLabels">
+                <div class="label">OFF</div>
+                <div class="label">ON</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

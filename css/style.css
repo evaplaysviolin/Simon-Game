@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: 1px dotted red;*/
+}
+
+html, body {
+  height: 100%;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  background-color: #fff5e8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#three {
+  height: 500px;
+  width: 500px;
+  border: 10px solid #2d2d2d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#two {
+  height: 100%;
+  width: 100%;
+  border-top: 4px solid #69d369;
+  border-right: 4px solid #e5597a;
+  border-left: 4px solid #fff366;
+  border-bottom: 4px solid #27acdd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+}
+
+#one {
+  height: 100%;
+  width: 100%;
+  border: 8px solid #2d2d2d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
+
+#buttonContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+#top, #bottom {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.button {
+  height: 100%;
+  width: 50%;
+}
+.green {
+  background-color: #0e7543;
+  border-right: 3px solid #2d2d2d;
+  border-bottom: 3px solid #2d2d2d;
+  border-top-left-radius: 100%;
+}
+.green:hover, .green.hover {
+  background-color: #0f9152;
+}
+.red {
+  background-color: #ad1d2f;
+  border-left: 3px solid #2d2d2d;
+  border-bottom: 3px solid #2d2d2d;
+  border-top-right-radius: 100%;
+}
+.red:hover, .red.hover {
+  background-color: #c63143;
+}
+.yellow {
+  background-color: #eac01c;
+  border-top: 3px solid #2d2d2d;
+  border-right: 3px solid #2d2d2d;
+  border-bottom-left-radius: 100%;
+}
+.yellow:hover, .yellow.hover {
+  background-color: #fcd74e;
+}
+.blue {
+  background-color: #201a9b;
+  border-top: 3px solid #2d2d2d;
+  border-left: 3px solid #2d2d2d;
+  border-bottom-right-radius: 100%;
+}
+.blue:hover, .blue.hover {
+  background-color: #2923bc;
+}
+
+#control {
+  height: 250px;
+  width: 250px;
+  border: 8px solid #2d2d2d;
+  border-radius: 50%;
+  background-color: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+#control > div {
+  margin: 5px;
+}
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 1px;
+}
+
+#window {
+  height: 50px;
+  width: 60px;
+  background-color: #2d2d2d;
+  border-radius: 15%;
+  color: #c92a3e;
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+#strictStartContainer {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+#strictContainer, #startContainer {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.strict, .start {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.strict {
+  background-color: #ad1d2f;
+  border: 2px solid #680c17;
+}
+.strict.strictOn {
+  box-shadow: 0px 0px 10px 2px #e5597a;
+}
+.start {
+  background-color: #0e7543;
+  border: 2px solid #023a1e;
+}
+.start.startOn {
+  box-shadow: 0px 0px 10px 2px #69d369;
+}
+
+#offOn {
+  height: 25px;
+  width: 50px;
+}
+.toggle {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.toggle input {
+  display: none;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2d2d2d;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slide:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 21px;
+  left: 2px;
+  bottom: 3px;
+  background-color: #999999;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slide {
+  background-color: #2d2d2d;
+}
+input:checked + .slide:before {
+  -webkit-transform: translateX(25px);
+  transform: translateX(25px);
+}
+#offOnLabels {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
